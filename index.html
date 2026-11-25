@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#f5ede3" />
+<meta name="description" content="VOGUE — thoughtful essentials and confident silhouettes for men and women." />
+<title>VOGUE | Wear Your Own Story</title>
+<link rel="icon" href="assets/images/placeholder.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="loading">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.5S3.5 15 3.5 8.9A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 8.5 1.9C20.5 15 12 20.5 12 20.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+</svg>
+
+<!-- LOADER -->
+<div class="loader" id="loader" aria-live="polite">
+  <div class="loader-inner">
+    <div class="loader-logo" aria-label="VOGUE"><span>V</span><span>O</span><span>G</span><span>U</span><span>E</span></div>
+    <div class="loader-line"><i id="loaderBar"></i></div>
+    <p>CURATING YOUR LOOK</p>
+  </div>
+</div>
+
+<div class="scrollbar" id="scrollbar"></div>
+<div class="backdrop" id="backdrop"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  <a href="#home" class="logo">VOGUE</a>
+  <nav class="menu" id="menu" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#shop" data-filter="men">Men</a>
+    <a href="#shop" data-filter="women">Women</a>
+    <a href="#new">New Arrivals</a>
+    <a href="#collections">Collections</a>
+    <a href="#story">Our Story</a>
+  </nav>
+  <div class="icons">
+    <button class="ic" id="btnSearch" aria-label="Search"><svg><use href="#i-search"/></svg></button>
+    <button class="ic" id="btnAccount" aria-label="Account"><svg><use href="#i-user"/></svg></button>
+    <button class="ic" id="btnWish" aria-label="Wishlist"><svg><use href="#i-heart"/></svg><b id="wishCount">0</b></button>
+    <button class="ic" id="btnBag" aria-label="Shopping bag"><svg><use href="#i-bag"/></svg><b id="bagCount">0</b></button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="season line-in"><span></span>THE NEW SEASON / 2026</p>
+    <h1><span class="mask"><span class="up">Wear Your</span></span><span class="mask"><span class="up d2"><em>Own</em> Story.</span></span></h1>
+    <p class="hero-sub line-in" style="--d:.9s">Thoughtful essentials. Confident silhouettes. Made for every version of you.</p>
+    <div class="cta line-in" style="--d:1.1s">
+      <a href="#shop" class="btn dark" data-filter="women">SHOP WOMEN</a>
+      <a href="#shop" class="btn light" data-filter="men">SHOP MEN</a>
+    </div>
+  </div>
+  <div class="hero-art">
+    <div class="frame f1"><img data-src="1515886657613-9f3515b0c78f" alt="Woman in a tailored neutral outfit" /></div>
+    <div class="frame f2"><img data-src="1617137968427-85924c800a22" alt="Man in a relaxed linen shirt" /></div>
+    <div class="badge-spin" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs><text><textPath href="#circ">SS 2026 · NEW COLLECTION · VOGUE ·</textPath></text></svg></div>
+  </div>
+  <a href="#marquee" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+</section>
+
+<div class="marquee" id="marquee"><div class="track">
+  <span>FREE SHIPPING OVER ₹2,999</span><i>✦</i><span>EASY 30-DAY RETURNS</span><i>✦</i><span>MADE TO LAST</span><i>✦</i><span>NEW SEASON / 2026</span><i>✦</i>
+  <span>FREE SHIPPING OVER ₹2,999</span><i>✦</i><span>EASY 30-DAY RETURNS</span><i>✦</i><span>MADE TO LAST</span><i>✦</i><span>NEW SEASON / 2026</span><i>✦</i>
+</div></div>
+
+<!-- NEW ARRIVALS -->
+<section class="sec" id="new">
+  <div class="sec-head reveal"><p class="eyebrow">JUST LANDED</p><h2>New <em>Arrivals</em></h2><a href="#shop" class="link" data-filter="new">View all →</a></div>
+  <div class="grid" id="gridNew"></div>
+</section>
+
+<!-- COLLECTIONS -->
+<section class="sec tone" id="collections">
+  <div class="sec-head reveal"><p class="eyebrow">COLLECTIONS</p><h2>Women’s <em>Collection</em></h2></div>
+  <div class="cats" id="catsWomen"></div>
+  <div class="sec-head reveal gap"><p class="eyebrow">COLLECTIONS</p><h2>Men’s <em>Collection</em></h2></div>
+  <div class="cats" id="catsMen"></div>
+</section>
+
+<!-- SHOP -->
+<section class="sec" id="shop">
+  <div class="sec-head reveal"><p class="eyebrow">THE EDIT</p><h2>Shop <em>VOGUE</em></h2></div>
+  <div class="tabs reveal" id="tabs" role="tablist">
+    <button class="tab on" data-tab="all">All</button><button class="tab" data-tab="men">Men</button><button class="tab" data-tab="women">Women</button><button class="tab" data-tab="new">New Arrivals</button>
+  </div>
+  <div class="chip-row" id="chipRow" hidden><span id="chipTxt"></span><button id="chipClear" aria-label="Clear category"><svg><use href="#i-x"/></svg></button></div>
+  <div class="grid" id="gridShop"></div>
+  <p class="none" id="shopNone" hidden>No products in this selection yet.</p>
+</section>
+
+<!-- BEST SELLERS -->
+<section class="sec tone">
+  <div class="sec-head reveal"><p class="eyebrow">LOVED BY YOU</p><h2>Best <em>Sellers</em></h2></div>
+  <div class="grid" id="gridBest"></div>
+</section>
+
+<!-- EDITORIAL -->
+<section class="editorial">
+  <div class="ed-bg" id="edBg"></div>
+  <div class="ed-copy reveal"><p class="eyebrow light">THE EDIT / 02</p><h2>Quiet luxury,<br/><em>loudly yours.</em></h2><a href="#shop" class="btn light" data-filter="new">DISCOVER THE EDIT</a></div>
+</section>
+
+<!-- TRENDING -->
+<section class="sec">
+  <div class="sec-head reveal"><p class="eyebrow">RIGHT NOW</p><h2>Trending <em>Now</em></h2></div>
+  <div class="grid" id="gridTrend"></div>
+</section>
+
+<!-- STORY -->
+<section class="sec story" id="story">
+  <div class="story-img reveal"><img data-src="1490481651871-ab68de25d43d" alt="Clothes on a rail in a calm studio" /></div>
+  <div class="story-copy reveal" style="--d:.15s">
+    <p class="eyebrow">OUR STORY</p>
+    <h2>Fashion is how you <em>speak</em> before you say a word.</h2>
+    <p>VOGUE began with a simple belief: clothing is personal expression, and confidence is the best thing you can wear. We design considered essentials in honest fabrics, cut to move with you and styled to be remixed, season after season.</p>
+    <p>No shouting trends. Just pieces that feel like you, on your best day and your ordinary one.</p>
+    <div class="facts"><div><b>100%</b><span>Natural-first fabrics</span></div><div><b>30</b><span>Day easy returns</span></div><div><b>2026</b><span>New season</span></div></div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="news reveal">
+  <h2>Join the <em>inner circle</em></h2>
+  <p>Early access to new drops and 10% off your first order. (Demo form)</p>
+  <form id="newsForm" novalidate><input type="email" id="newsEmail" placeholder="Your email address" aria-label="Email address" /><button class="btn dark" type="submit">SUBSCRIBE</button></form>
+  <small id="newsMsg" role="status"></small>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="f-grid">
+    <div><div class="logo">VOGUE</div><p>Wear your own story.</p></div>
+    <div><h4>Shop</h4><a href="#shop" data-filter="women">Women</a><a href="#shop" data-filter="men">Men</a><a href="#new">New Arrivals</a></div>
+    <div><h4>Company</h4><a href="#story">Our Story</a><a href="#collections">Collections</a><a href="#home">Back to top</a></div>
+    <div><h4>Help</h4><span>Shipping &amp; Returns</span><span>Size Guide</span><span>care@vogue.demo</span></div>
+  </div>
+  <p class="tiny">© 2026 VOGUE · College project demo · No real payments or accounts.</p>
+</footer>
+
+<!-- SEARCH -->
+<div class="search" id="search" aria-hidden="true">
+  <button class="close" data-close aria-label="Close search"><svg><use href="#i-x"/></svg></button>
+  <div class="search-in"><svg><use href="#i-search"/></svg><input id="searchInput" type="search" placeholder="Search dresses, shirts, men, women…" autocomplete="off" /></div>
+  <div class="search-res grid small" id="searchRes"></div>
+  <p class="none" id="searchNone" hidden>No results found. Try “shirt”, “dress” or “jacket”.</p>
+</div>
+
+<!-- CART -->
+<aside class="drawer" id="cart" aria-hidden="true" aria-label="Shopping bag">
+  <div class="d-head"><h3>Your Bag</h3><button class="close static" data-close aria-label="Close bag"><svg><use href="#i-x"/></svg></button></div>
+  <div class="d-body" id="cartBody"></div>
+  <div class="d-foot" id="cartFoot"><div class="sub"><span>Subtotal</span><b id="cartSub">₹0</b></div><small>Shipping and taxes are calculated at checkout (demo).</small><button class="btn dark full" id="checkout">CHECKOUT</button></div>
+</aside>
+
+<!-- WISHLIST -->
+<aside class="drawer" id="wish" aria-hidden="true" aria-label="Wishlist">
+  <div class="d-head"><h3>Wishlist</h3><button class="close static" data-close aria-label="Close wishlist"><svg><use href="#i-x"/></svg></button></div>
+  <div class="d-body" id="wishBody"></div>
+</aside>
+
+<!-- PRODUCT / AUTH MODALS -->
+<div class="modal" id="pModal" aria-hidden="true" role="dialog" aria-modal="true"><div class="m-box" id="pBox"></div></div>
+
+<div class="modal" id="authModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Account">
+  <div class="m-box auth">
+    <button class="close" data-close aria-label="Close"><svg><use href="#i-x"/></svg></button>
+    <div class="auth-img"><img data-src="1539109136881-3be0616acf4b" alt="" /><div><div class="logo light">VOGUE</div><p>Your wardrobe, your way.</p></div></div>
+    <div class="auth-forms">
+      <div class="switch" id="authSwitch"><button class="on" data-mode="in">Sign In</button><button data-mode="up">Create Account</button><i></i></div>
+      <p class="demo-note">Demo only — nothing is sent or saved.</p>
+      <form id="formIn" class="form on" novalidate>
+        <label>Email address<input type="email" name="email" autocomplete="email" /><em></em></label>
+        <label>Password<span class="pw"><input type="password" name="password" autocomplete="current-password" /><button type="button" class="eye" aria-label="Show password"><svg><use href="#i-eye"/></svg></button></span><em></em></label>
+        <button class="btn dark full" type="submit">SIGN IN</button>
+      </form>
+      <form id="formUp" class="form" novalidate>
+        <label>Full name<input type="text" name="name" autocomplete="name" /><em></em></label>
+        <label>Email address<input type="email" name="email" autocomplete="email" /><em></em></label>
+        <label>Password<span class="pw"><input type="password" name="password" autocomplete="new-password" /><button type="button" class="eye" aria-label="Show password"><svg><use href="#i-eye"/></svg></button></span><em></em></label>
+        <label>Confirm password<span class="pw"><input type="password" name="confirm" autocomplete="new-password" /><button type="button" class="eye" aria-label="Show password"><svg><use href="#i-eye"/></svg></button></span><em></em></label>
+        <button class="btn dark full" type="submit">CREATE ACCOUNT</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
